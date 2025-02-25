@@ -1,0 +1,28 @@
+{
+  "name": "react-smart-toast-demo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react-scripts": "^5.0.1",
+    "react-smart-toast": "file:../dist"
+  },
+  "scripts": {
+    "preinstall": "cd ../ && npm run build",
+    "start": "react-scripts start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}

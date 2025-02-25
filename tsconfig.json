@@ -4,25 +4,19 @@
     "module": "ESNext",
     "target": "ES6",
     "declaration": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "isolatedModules": false,  
+    "noEmit": false            
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
