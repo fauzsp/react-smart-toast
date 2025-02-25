@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ToastContainer from './components/ToastContainer';
+import logo from './logo.svg';
 
 function App() {
   return (
@@ -18,6 +18,22 @@ function App() {
         >
           Learn React
         </a>
+        <ToastContainer
+          defaultToasts={[
+            { id: Date.now(), message: "Operation Successful!", type: "success" },
+            { id: Date.now() + 1, message: "Something went wrong!", type: "error" },
+            { id: Date.now() + 2, message: "Here’s some info for you!", type: "info" },
+            { id: Date.now() + 3, message: "Warning! Check your input.", type: "warning" },
+          ]}
+          customStyles={{  
+            position: "fixed",
+            bottom: "0",
+            display: "flex",
+            right: "10px",
+            flexDirection: "column",
+            gap: "10px",
+          }}
+        />
       </header>
     </div>
   );
